@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "원헬스 건강 캠페인",
+  "short_name": "원헬스 건강",
+  "description": "가족과 함께 만드는 건강한 일상, 원헬스 건강 캠페인",
+  "lang": "ko-KR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#edf4e6",
+  "theme_color": "#dcebcf",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

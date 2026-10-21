@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#dcebcf">
+  <meta name="description" content="가족과 함께 만드는 작은 건강 습관. 10월 31일까지 참여하는 원헬스 건강 캠페인.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="원헬스 건강">
+  <title>원헬스 건강 캠페인</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" href="/fonts/jua.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/gowun-dodum.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="page-decoration decoration-one" aria-hidden="true"></div>
+  <div class="page-decoration decoration-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <button class="brand" type="button" data-action="home" aria-label="원헬스 건강 캠페인 홈">
+      <span class="brand-heart" aria-hidden="true">♥</span><span>원헬스 <span class="brand-light">건강 캠페인</span></span>
+    </button>
+    <span class="school-pill">우리 가족, 하나의 팀</span>
+  </header>
+  <p id="local-preview-note" hidden style="text-align:center;margin:8px 18px;padding:9px 12px;background:#fff8e7;border-radius:14px;font-size:12px">파일 미리보기 · 예시 팀으로 화면을 둘러볼 수 있어요. 실제 기록은 저장되지 않아요.</p>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer">
+    <span>작은 실천이 모여, 건강한 우리 ♡</span>
+    <div><button type="button" class="text-button" data-action="home">처음으로</button><span aria-hidden="true">·</span><button type="button" class="text-button" data-action="teacher">선생님 공간</button></div>
+    <small>사진과 실천 이야기는 해당 팀과 선생님만 볼 수 있어요.</small>
+  </footer>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div><button type="button" class="modal-x" aria-label="닫기" data-action="close-modal">×</button></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
