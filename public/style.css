@@ -37,3 +37,15 @@ html{overflow-x:clip}.hero-art img{height:auto}@media(min-width:601px) and (max-
 .admin-team-title{display:flex;align-items:center;gap:12px;min-width:0}
 @media(max-width:600px){.hero-actions .mission-button{min-width:0;flex:1 1 140px}.hero-actions .mission-button.secondary{font-size:17px;padding:10px 17px}.first-hint{font-size:12px}.team-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.team-card{padding:11px 4px 10px;border-radius:17px}.team-card-name{font-size:15px}.animal-avatar{--size:66px}.animal-avatar.large{--size:80px}.animal-avatar.small{--size:40px}.first-step{padding:15px}.step-head h2{font-size:20px}.registered-team strong{font-size:20px}.team-header-main{gap:11px}}
 @media(max-width:350px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 버튼 로딩: 천천히 차오르기 */
+.button.loading{position:relative;overflow:hidden;isolation:isolate;cursor:progress}.button.loading:disabled{opacity:1}
+.button.loading::before{content:'';position:absolute;inset:0;z-index:-1;background:currentColor;opacity:.22;transform:scaleX(0);transform-origin:left center;animation:button-fill 9s cubic-bezier(.12,.75,.25,1) forwards}
+@keyframes button-fill{to{transform:scaleX(.95)}}
+/* 사진 올리기 안내 줄바꿈 */
+.upload-box .help{display:block;margin-top:8px}
+/* 선물 그림 */
+.reward-img{display:block;width:64px;height:64px;margin:0 auto 4px;object-fit:contain}
+.bonus-note{display:flex;align-items:center;gap:12px}.bonus-note p{margin:0}.bonus-img{flex-shrink:0;width:78px;height:78px;object-fit:contain}
+.reward-name{display:inline-flex;align-items:center;gap:7px}.reward-name img{width:30px;height:30px;object-fit:contain}
+@media(max-width:600px){.reward-img{width:54px;height:54px}.bonus-img{width:64px;height:64px}}
